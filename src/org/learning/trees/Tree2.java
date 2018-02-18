@@ -24,7 +24,7 @@ public class Tree2 {
 		inner2.setRight(leaf4);
 
 		System.out.println("Max element in Tree is " + t.maxBinaryTree(root));
-		
+		System.out.println("Size of the Tree is " + t.size(root));
 		System.out.println("Find element 4 in Tree " + t.findBinaryTree(root, 4));
 	}
 	
@@ -60,4 +60,14 @@ public class Tree2 {
 		return false;
 	}
 
+	
+	int size(TreeNode root) {
+		
+		int leftCount = (root.getLeft() != null)? size(root.getLeft()):0;
+		int rightCount = (root.getRight() != null)? size(root.getRight()):0;
+		
+		return 1 + leftCount + rightCount;
+				
+	}
+	
 }
