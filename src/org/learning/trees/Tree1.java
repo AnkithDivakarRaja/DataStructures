@@ -27,6 +27,8 @@ public class Tree1 {
 		inner2.setRight(leaf4);
 		
 		t.levelOrderTraversal(root);
+		System.out.println("reverse order");
+		t.reverseLevelOrderTreversal(root);
 	}
 
 	void levelOrderTraversal(TreeNode root) {
@@ -50,4 +52,32 @@ public class Tree1 {
 		}
 	}
 	
+	void reverseLevelOrderTreversal(TreeNode root) {
+		
+		int h = height(root);
+		
+		for(int i = h - 1; i >= 0; i--) {
+			levelPrint(root, i);
+		}
+		
+	}
+	
+	void levelPrint(TreeNode root, int level) {
+		
+		if(level < 0 )
+			return;
+		else if(level == 0) {
+			System.out.println(root.getData());
+		}else {
+			levelPrint(root.getLeft(), level - 1);
+			levelPrint(root.getRight(), level - 1);
+		}
+	}
+	
+	int height(TreeNode root) {
+		
+		if(root == null) return 0;
+		
+		return 1 + Math.max(height(root.getLeft()), height(root.getRight()));
+	}
 }
