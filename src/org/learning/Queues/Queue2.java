@@ -1,4 +1,4 @@
-package org.learning.Queues;
+package org.learning.queues;
 
 import java.util.*;
 
