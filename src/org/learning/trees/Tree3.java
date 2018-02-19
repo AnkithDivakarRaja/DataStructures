@@ -1,8 +1,5 @@
 package org.learning.trees;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.learning.support.TreeNode;
 
 public class Tree3 {
