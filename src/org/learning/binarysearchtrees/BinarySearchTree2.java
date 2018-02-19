@@ -1,6 +1,6 @@
 package org.learning.binarysearchtrees;
 
-import org.learning.support.TreeNode;import com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo;
+import org.learning.support.TreeNode;
 
 public class BinarySearchTree2 {
 

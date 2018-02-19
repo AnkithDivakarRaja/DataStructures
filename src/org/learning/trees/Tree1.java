@@ -31,7 +31,7 @@ public class Tree1 {
 		t.reverseLevelOrderTreversal(root);
 	}
 
-	void levelOrderTraversal(TreeNode root) {
+	public void levelOrderTraversal(TreeNode root) {
 		
 		Queue<TreeNode> que = new LinkedList<>();
 		
@@ -44,7 +44,7 @@ public class Tree1 {
 				if(tmp.getLeft() != null) que.add(tmp.getLeft());
 				if(tmp.getRight() != null) que.add(tmp.getRight());
 				
-				System.out.print(tmp.getData());
+				System.out.print(tmp.getData() + " ");
 			}else {
 				System.out.println();
 				if(!que.isEmpty())que.add(null);
