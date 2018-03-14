@@ -12,6 +12,7 @@ public class Tree4 {
 		
 		if(node == null) return;
 		
+		//Go to the left most node to find the head of the DLL
 		buildDLLfromBST(node.getLeft());
 		
 		if(prev == null)
@@ -22,6 +23,7 @@ public class Tree4 {
 		}
 		prev = node;
 		
+		//Add  the right elements to the DLL
 		buildDLLfromBST(node.getRight());
 	}
 	
