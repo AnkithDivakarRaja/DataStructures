@@ -43,4 +43,9 @@ public class Node<T> {
 		this.height = height;
 	}
 	
+	@Override
+	public String toString() {
+		return ""+data;
+	}
+	
 }
