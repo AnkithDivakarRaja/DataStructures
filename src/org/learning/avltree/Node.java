@@ -34,5 +34,13 @@ public class Node<T> {
 	public void setRightNode(Node<T> rightNode) {
 		this.rightNode = rightNode;
 	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
 	
 }
